@@ -12,7 +12,6 @@ const refs = {
 refs.gallery.addEventListener('click', onOpenModalClick);
 
 let currentImgIndexOriginal = null;
-
 //Создание контента блока галереи
 function contentGalleryList({preview,description,original},index) {
     return `
