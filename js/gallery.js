@@ -70,7 +70,7 @@ function onCloseModalClickKey(e) {
         onCloseModalClick();
     }
     if (e.code === 'ArrowRight') {
-        (currentImgIndexOriginal + 1 >  galleryImg.length - 1) ? currentImgIndexOriginal = 0 : currentImgIndexOriginal += 1;
+        (currentImgIndexOriginal === galleryImg.length - 1) ? currentImgIndexOriginal = 0 : currentImgIndexOriginal += 1;
 
         refs.originalImgModal.src = galleryImg[currentImgIndexOriginal].original;
     }
